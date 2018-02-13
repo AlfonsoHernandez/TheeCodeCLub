@@ -1,0 +1,274 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.nav-bar {
+    background-color: white;
+    height: 52px;
+    position: relative;
+    border-bottom: solid 1px lightgrey;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: solid 1px lightgrey;
+}
+
+.links {
+    margin-top: 15px;
+    float: right;
+    margin-right: 30px;
+}
+
+.links a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.box-link {
+    color: red;
+    text-decoration: none;
+    font-size: 15px;
+    border: solid 1px red;
+    padding: 8px 15px 8px 15px;
+    background-color: inherit;
+    width: 500px;
+}
+
+.box-link:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.admin-box-link {
+    border: solid 1px black;
+    color: white;
+    background-color: black;
+}
+
+.admin-box-link:hover {
+    color: white;
+}
+
+.logo-container {
+    display: inline-block;
+    margin-top: 13px;
+    background-color: inherit;
+}
+
+.logo {
+    color: black;
+    border: none;
+    font-size: 20px;
+    background-color: inherit;
+}
+
+.logo:hover {
+    color: black;
+}
+
+.sign-up {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.sign-up:hover {
+    color: white;
+}
+
+main {
+    text-align: center;
+}
+
+form {
+    margin: auto;
+    margin-top: 40px;
+}
+
+.login-signup input[type=text],
+input[type=password] {
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    border-top: solid 1px #646464;
+    border-left: solid 1px #646464;
+    border-right: solid 1px #646464;
+}
+
+input {
+    padding-left: 15px;
+}
+
+.last-input {
+    border-bottom: solid 1px #646464;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #d4cdcd;
+}
+
+::-webkit-input {
+    padding-left: 15px;
+}
+
+form {
+    text-align: center;
+}
+
+.error {
+    color: red;
+    height: 30px;
+}
+
+.content {
+    background-color: white;
+}
+
+.content-container {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -31px;
+    width: 95%;
+    max-width: 1200px;
+    background-color: inherit;
+}
+
+.title {
+    padding-top: 50px;
+}
+
+.sub-title {}
+
+a {
+    text-decoration: none;
+    vertical-align: top;
+    color: inherit;
+}
+
+
+/*TABLE*/
+
+.table {
+    text-align: left;
+    width: 100%;
+    font-size: 12px;
+}
+
+th {
+    color: lightgrey;
+}
+
+.thumbnail {
+    background-color: white;
+    text-align: center;
+    height: 200px;
+    border-radius: 0;
+}
+
+.thumbnail p {
+    font-size: 14px;
+}
+
+.thumbnail:hover {
+    background-color: #ff3333;
+    ;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.short-desc {
+    width: 95%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.grey {
+    background-color: lightgrey;
+}
+
+.row {
+    background-color: inherit;
+}
+
+.form-group {
+    text-align: left;
+}
+
+
+/*-------------------Project Page------------------------------*/
+
+.project-container {
+    text-align: left;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.project-head {
+    background-color: white;
+    padding-left: 30px;
+    padding-bottom: 35px;
+}
+
+.project-title {
+    font-size: 65px;
+    color: #dd0000;
+}
+
+.project-subtitle {
+    font-size: 40px;
+}
+
+.project-contents-container {
+    width: 95%;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.project-contents {
+    background-color: #dd0000;
+    margin-top: -20px;
+    color: white;
+    height: 1000px;
+}
+
+.project-body {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.project-example {
+    font-size: 22px;
+}
+
+.req-list {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+
+/*-------------------Footer------------------------------*/
+

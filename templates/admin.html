@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block content %}
+	<main>
+		<div class="content">
+			<div class="content-container">
+				<div class="project-container">
+					<div class="project-head">
+						<h1 class="project-title black">Admin</h1>
+						<h3 class="project-subtitle">({{user.user_name}})</h3>
+					</div> 
+					<div class="project-contents back-white">
+						<div class="project-contents-container">
+							<div class="row">
+								<div class="col-sm-3">
+									<a href="/AddLesson">
+										<div class="action">
+											<span>Add Project</span>
+											<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-3">
+									<a href="#">
+										<div class="action">
+											<span>Add Student</span>
+											<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-3">
+									<a href="#">
+										<div class="action">
+											<span>My Account</span>
+											<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-3">
+									<a href="#">
+										<div class="action">
+											<span>Add Season</span>
+											<span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<br>
+							<div class="panel panel-default">
+								<div class="panel-heading">Student List</div>
+								<table class="table table-striped">
+									<thead>
+									<tr>
+										<th>Username</th>
+										<th>First Name</th>
+										<th>Last Name</th>
+										<th>Email</th>
+									</tr>
+									</thead>
+									<tbody>
+									{% for student in Students %}
+									<tr>
+										<td>{{student.user_name}}</td>
+										<td>{{student.first_name}}</td>
+										<td>{{student.last_name}}</td>
+										<td>{{student.email}}</td>
+									</tr>
+									{% endfor %}
+								</tbody>
+								</table>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Admin List</div>
+								<table class="table table-striped">
+									<thead>
+									<tr>
+										<th>Username</th>
+										<th>First Name</th>
+										<th>Last Name</th>
+										<th>Email</th>
+									</tr>
+									</thead>
+									<tbody>
+									{% for admin in Admins %}
+									<tr>
+										<td>{{admin.user_name}}</td>
+										<td>{{admin.first_name}}</td>
+										<td>{{admin.last_name}}</td>
+										<td>{{admin.email}}</td>
+									</tr>
+									{% endfor %}
+									</tbody>
+									</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock %}

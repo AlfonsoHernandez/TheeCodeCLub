@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<main>
+		<div class="content">
+			<div class="content-container">
+				<h1 class="title">Add New Project</h1>
+				<hr>
+				
+				<form method="post">
+					<div class="form-group">
+						<label >Project Title</label>
+    					<input type="text" class="form-control" placeholder="Enter Project Title" name="title">
+					</div>
+					<div class="form-group">
+						<label >Project ID</label>
+    					<input type="text" class="form-control" placeholder="Enter Project ID" name="project_id">
+					</div>
+					<div class="form-group">
+						<label>Short Project Description</label>
+    					<textarea class="form-control" id="exampleTextarea" rows="4" aria-describedby="shortHelp" name="short"></textarea>
+    					<small id="shortHelp" class="form-text text-muted">This description will show up on the Lessons page.</small>
+					</div>
+					<div class="form-group">
+						<label>Longer Project Description</label>
+    					<textarea class="form-control" id="exampleTextarea" rows="5" aria-describedby="longerHelp" name="long"></textarea>
+    					<small id="longerHelp" class="form-text text-muted">This description will show up on the individual project page.</small>
+					</div>
+					<div class="form-group">
+						<label>JSFiddle &lt;script&gt; Embed</label>
+    					<input type="text" class="form-control" placeholder="Enter &lt;script&gt;" name="jsfiddle">
+					</div>
+					<input type="submit" value="Add Project">
+				</form>
+			</div>
+		</div>
+	</main>
+{% endblock %}

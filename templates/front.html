@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+    <main>
+        <div class="content" id="front">
+            <div class="content-container">
+                <br>
+                <h1 class="title white-text">Welcome to Thee Code Club.</h1>
+                <h4 class="sub-title white-text">By Alfonso Hernandez</h4>
+                <br><br><br>
+                <form method="post" class="login-signup">
+                    <table class="login-signup">
+                        <input placeholder="Username" type="text" name="user_name" value="{{user_name}}"><br>
+                        <input class="last-input" placeholder="Password" type="password" name="password">
+                    </table>
+                    <div class="error">
+                    <p>{{error}}</p>
+                    </div>
+                        <input type="submit" value="Sign In">
+                </form>
+                <br><br><br>
+            </div>
+        </div> 
+        <br>
+        <br>
+        <br>
+        <div class="content">
+            <div class="content-container">
+                <div class="project-head">
+                    <h1 class="project-title">Featured Projects</h1>
+                    <hr>
+                </div>
+                <div class="featured-projects">
+                    <div class="row">
+                        <div class="col-sm-4" id="first">
+                            <div class="featured-project">
+                                <h3>Top Soccer Teams</h3>
+                                <p>Danny</p>
+                                    <img src="https://s3-eu-west-1.amazonaws.com/portaventura-world-production-files/wilson_cms/images/images/000/001/649/small_square/Barcelona-FCB.jpg?1452330070">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="featured-project">
+                                <h3>Summer To-Do List</h3>
+                                <p>Areli</p>
+                                <img src="http://www.ilvirtual.org/about/images/summersun.png">
+                            </div>
+                            </div>
+                        <div class="col-sm-4" id="last">
+                            <div class="featured-project">
+                                <h3>Space Camp</h3>
+                                <p>Andres</p>
+                                <img src="https://s-media-cache-ak0.pinimg.com/736x/4c/72/5e/4c725e1416e0d669b86c02272ca40ece.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div
+    </main>
+{% endblock %}

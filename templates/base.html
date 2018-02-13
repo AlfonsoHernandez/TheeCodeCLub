@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="/static/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Thee Code Club</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            {% if user %}
+            <a class="box-link logo" href="/Home">Thee Code Club</a>
+            {% else %}
+            <a class="box-link logo" href="/">Thee Code Club</a>
+        {% endif %}
+        </div>
+        <div class="links">
+            {% if user.isAdmin == True %}
+            <a class="box-link admin-box-link" href="/Admin">Admin</a>
+            {% endif %}
+            <a class="box-link" href="/Lessons">Projects</a>
+            <a class="box-link" href="/Gallery">Gallery</a>
+            {% if user %}
+            <a class="box-link sign-up" href="/Logout">Logout</a>
+            {% else %}
+            <a class="box-link sign-up" href="/SignUp">Sign Up</a>
+            {% endif %}
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

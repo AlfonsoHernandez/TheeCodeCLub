@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+	<main>
+		<div class="content">
+			<div class="content-container">
+				<h1 class="title">Projects</h1>
+				<hr>
+				<!--<script async src="//jsfiddle.net/maxhdz/3dprdahx/7/embed/html,css,result/?accentColor=ff0000"></script>-->
+				{% set count = 4 %}
+				{% for lesson in Lessons %}
+				{% if count == 4 %}
+				<div class="row">
+				{% endif %}
+					<div class="col-sm-3">
+						<a href="/Lesson">
+							<div class="thumbnail">
+								<h3>{{lesson.title}}</h3>
+								<div class="short-desc">
+									<p>{{lesson.short_description}}</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				{% set count = 0 %}
+				{% if count == 4 %}
+				</div>
+				{% set count = 0 %}
+				{% endif %}
+				{% set count = count + 1 %}
+				{% endfor %}
+			</div>
+		</div>
+	</main>
+{% endblock %}
+<!--
+<div class="row">
+					<div class="col-sm-3">
+						<a href="#">
+							<div class="thumbnail">
+								<h3>First Website</h3>
+								<div class="short-desc">
+									<p>Build your first website! Learn how to build a very simple websiten using only text and images.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+-->

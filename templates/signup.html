@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+    <main>
+        <div class="content">
+            <div class="content-container">
+                <h1 class="title">Welcome to Thee Code Club.</h1>
+                <h4 class="sub-title">By Alfonso Hernandez</h4>
+                <br>
+                <hr>
+                <form method="post" class="login-signup">
+                <h1>Sign Up</h1>
+                <table class="login-signup">
+        
+                    <input class="top-input" placeholder="First Name" type="text" name="first_name" value="{{name}}"><br>
+
+                    <input placeholder="Last Name" type="text" name="last_name" value="{{last_name}}"><br>
+
+                    <input placeholder="Username" type="text" name="user_name" value="{{user_name}}"><br>
+
+                    <input placeholder="Password" type="password" name="password"><br>
+
+                    <input placeholder="Verify Password" type="password" name="verify_password"><br>
+
+                    <input  placeholder="Email (optional)" type="text" name="email" value="{{email}}"><br>
+
+                    <input class="last-input" placeholder="Signup Code" type="text" name="signup_code">
+
+                </table>
+                <div class="error">
+                <p>{{error}}</p>
+                </div>
+                <input type="submit" value="Sign Up">
+                </form>
+                    </div>
+                </div>
+    </main>
+{% endblock %}

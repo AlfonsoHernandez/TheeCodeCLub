@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+	<main>
+		<div class="content">
+			<div class="content-container">
+				<div class="project-container">
+					<div class="project-head">
+						<h1 class="project-title">Project 1</h1>
+						<h3 class="project-subtitle">{{Lesson.title}}</h3>
+					</div>
+					<div class="project-contents" id="project-height">
+						<div class="project-contents-container">
+                            <p class="project-example">Decription</p>
+                            <p class="project-body">{{Lesson.long_description}}</p>
+                            <p class="project-example">Requirements</p>
+                            <ul class="req-list">
+                                <li>At least 4 images</li>
+                                <li>At least 4 short paragraphs</li>
+                                <li>Title for each image</li>
+                            </ul>
+				            <p class="project-example">Example</p>
+				            {{Lesson.jsfiddle}}
+                        </div>
+					</div>
+				<!--<script async src="//jsfiddle.net/maxhdz/3dprdahx/7/embed/html,css,result/?accentColor=ff0000"></script>-->
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock %}
